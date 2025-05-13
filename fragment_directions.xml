@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="@color/light_blue"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <!-- Level 1 Instruction -->
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp">
+            <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:src="@drawable/level1_example"
+                    android:contentDescription="Level 1"/>
+            <TextView
+                    android:layout_marginStart="16dp"
+                    android:text="Draw the answer to 5 + 3"
+                    android:textSize="18sp"/>
+        </LinearLayout>
+
+        <!-- Level 2 Instruction -->
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp">
+            <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:src="@drawable/level2_example"
+                    android:contentDescription="Level 2"/>
+            <TextView
+                    android:layout_marginStart="16dp"
+                    android:text="Draw the answer to 4 × 5"
+                    android:textSize="18sp"/>
+        </LinearLayout>
+
+        <!-- Level 3 Instruction -->
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp">
+            <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:src="@drawable/level3_example"
+                    android:contentDescription="Level 3"/>
+            <TextView
+                    android:layout_marginStart="16dp"
+                    android:text="Solve 3 + X = 4"
+                    android:textSize="18sp"/>
+        </LinearLayout>
+
+        <Button
+                android:id="@+id/backHomeButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Back to Home"
+                android:backgroundTint="@color/dark_blue"
+                android:textColor="@color/white"
+                android:layout_marginTop="24dp"/>
+    </LinearLayout>
+</ScrollView>
