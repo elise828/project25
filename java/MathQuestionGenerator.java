@@ -37,16 +37,37 @@ public class MathQuestionGenerator {
                 currentQuestion = a + " x " + b;
                 correctAnswer = a * b;
             } else if (level == 3) {
-                int firstOp = random.nextInt(2); // 0 = +, 1 = -
-                int secondOp = random.nextInt(2);
-                String operator1 = (firstOp == 0) ? "+" : "-";
-                String operator2 = (secondOp == 0) ? "+" : "-";
+                int form = random.nextInt(3); // choose between different forms of equation
+                int x;
 
-                currentQuestion = a + " " + operator1 + " " + b + " " + operator2 + " " + c;
-
-                int temp = (firstOp == 0) ? a + b : a - b;
-                correctAnswer = (secondOp == 0) ? temp + c : temp - c;
+                switch (form) {
+                    case 0:
+                        // Form: X + a = b
+                        x = random.nextInt(10);
+                        a = random.nextInt(10);
+                        b = x + a;
+                        currentQuestion = "X + " + a + " = " + b;
+                        correctAnswer = x;
+                        break;
+                    case 1:
+                        // Form: a + X = b
+                        x = random.nextInt(10);
+                        a = random.nextInt(10);
+                        b = a + x;
+                        currentQuestion = a + " + X = " + b;
+                        correctAnswer = x;
+                        break;
+                    case 2:
+                        // Form: X - a = b
+                        x = random.nextInt(10) + 5; // ensure x >= a
+                        a = random.nextInt(x); // a < x
+                        b = x - a;
+                        currentQuestion = "X - " + a + " = " + b;
+                        correctAnswer = x;
+                        break;
+                }
             }
+
         } while (correctAnswer < 0 || correctAnswer > 9);
     }
 
