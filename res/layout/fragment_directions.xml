@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:background="@color/light_blue"
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <!-- Welcome Text -->
+        <TextView
+                android:id="@+id/welcomeText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Welcome to Math Mania!"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_marginBottom="12dp"/>
+
+        <!-- Description -->
+        <TextView
+                android:id="@+id/descriptionText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Thank you for playing our game! Click the buttons below to learn how to play each level."
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_marginBottom="24dp"/>
+
+        <!-- Level 1 Button -->
+        <Button
+                android:id="@+id/level1Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Level 1 Directions"
+                android:backgroundTint="@color/dark_blue"
+                android:textColor="@color/white"
+                android:layout_marginTop="180dp"
+                android:layout_marginBottom="12dp" />
+
+        <!-- Level 2 Button -->
+        <Button
+                android:id="@+id/level2Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Level 2 Directions"
+                android:backgroundTint="@color/dark_blue"
+                android:textColor="@color/white"
+                android:layout_marginBottom="12dp" />
+
+        <!-- Level 3 Button -->
+        <Button
+                android:id="@+id/level3Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Level 3 Directions"
+                android:backgroundTint="@color/dark_blue"
+                android:textColor="@color/white"
+                android:layout_marginBottom="12dp" />
+
+    </LinearLayout>
+</ScrollView>
